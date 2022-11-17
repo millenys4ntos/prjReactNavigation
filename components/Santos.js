@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ActivityIndicator, FlatList } from "react-native";
 
-export default function Mongagua() {
+export default function Santos() {
     const [dados, setDados] = useState("");
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const request = async () => {
             const req = await fetch(
-                `https://api.hgbrasil.com/weather?woeid=460161&array_limit=10&fields=only_results,temp,city_name,forecast,max,min,date&key=a3460caf`
+                `https://api.hgbrasil.com/weather?woeid=455991&array_limit=10&fields=only_results,temp,city_name,forecast,max,min,date&key=a3460caf`
             );
             const json = await req.json();
 
